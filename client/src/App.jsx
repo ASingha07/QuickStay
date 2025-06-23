@@ -27,7 +27,7 @@ const App = () => {
       <Toaster />
       {!isOwnerPath && <Navbar />}
       {showHotelReg && <HotelReg />}
-      <div className='min-h-[70vh]'>
+      <div className='min-h-[calc(100vh-5rem)] pb-20'>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/rooms' element={<AllRooms />} />
