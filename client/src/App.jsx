@@ -14,6 +14,7 @@ import RoomDetails from './pages/RoomDetails'
 import Footer from './components/Footer'
 import MyBookings from './pages/MyBookings'
 import Loader from './components/Loader'
+import NotFoundPage from './components/NotFoundPage'
 
 const App = () => {
 
@@ -39,6 +40,7 @@ const App = () => {
           <Route path="add-room" element={<AddRoom />} />
           <Route path="list-room" element={<ListRoom />} />
         </Route>
+        <Route path='*' element={<NotFoundPage />} />
       </Routes>
       </div>
       <Footer />
