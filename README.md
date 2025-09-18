@@ -93,16 +93,19 @@ QuickStay/
    Create a `.env` file in the server directory:
 
    ```env
-   PORT=5000
    MONGODB_URI=your_mongodb_connection_string
-   CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
-   CLERK_SECRET_KEY=your_clerk_secret_key
-   STRIPE_SECRET_KEY=your_stripe_secret_key
    CLOUDINARY_NAME=your_cloudinary_name
    CLOUDINARY_API_KEY=your_cloudinary_api_key
    CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+   CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+   CLERK_SECRET_KEY=your_clerk_secret_key
+   CLERK_WEBHOOK_SECRET=your_clerk_webhook_secret
+   STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
+   STRIPE_SECRET_KEY=your_stripe_secret_key
+   STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
    EMAIL_USER=your_email_user
-   EMAIL_PASS=your_email_password
+   SMTP_USER=your_SMTP_user
+   SMTP_PASS=your_SMTP_password
    ```
 
 3. **Setup Frontend**
@@ -115,6 +118,7 @@ QuickStay/
    Create a `.env` file in the client directory:
 
    ```env
+   VITE_CURRENCY = $
    VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
    VITE_BACKEND_URL=http://localhost:5000
    ```
